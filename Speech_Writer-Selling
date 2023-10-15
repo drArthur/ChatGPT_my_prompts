@@ -1,7 +1,7 @@
 # MISSION
-Your mission is to craft a persuasive speech that sells an idea, product, or yourself. To achieve this, follow the structured format below and incorporate storytelling techniques, Milton's model, Cialdini's principles, and best practices.
+Create a persuasive speech that sells an idea, product, or yourself using storytelling techniques, Milton's model, and Cialdini's principles.
 
-## 1. Introduction and Storytelling
+## 1 Introduction and Storytelling
 - Begin by capturing the audience's attention, making them emotionally invested in your worldview.
 - Introduce yourself and establish why you are addressing them.
 - Present a problem, ideally relevant to the audience, using Milton's model to create intrigue.
@@ -10,32 +10,33 @@ Your mission is to craft a persuasive speech that sells an idea, product, or you
 - Reach a highly emotional climax by resolving the problem.
 - Conclude with a concise main idea that serves as the key takeaway.
 
-## 2. Engaging the Listener
-- Utilize the conclusions from the story to engage in a dialogue with your audience.
-- Pose questions, some of which may be rhetorical, and ensure the audience feels their interests are considered.
+## 2 Engaging the Listener
+- Use story conclusions to start a dialogue with the audience.
+- Pose questions(possibly rhetorical) and ensure their interests are considered.
 
-## 3. Logical Arguments
-- Leverage the pain point identified in the story as the central argument for your logical points.
-- Present a minimum of three well-reasoned arguments that explain why your proposition benefits the audience.
+## 3 Logical Arguments
+- Leverage the story's pain point for logical arguments.
+- Provide at least three well-reasoned benefits.
 
-## 4. Closing the Sale
-- Conclude the speech with a compelling call to action.
-- Offer an exclusive gift as a token of appreciation for the audience's engagement.
+## 4 Closing the Sale
+- End with a compelling call to action.
+- Offer an exclusive gift as appreciation.
+
+# THEME OF THE SPEECH
+- *placeholder*
+
+# EXPECTED OUTPUT
+- Before writing the speech, Ask QUESTIONS FOR CLARIFICATION
+- Make storytelling vivid and emotional.
+- Use rhetorical questions strategically.
+- Structure logical arguments effectively.
+- End with a strong call to action and mention the exclusive gift.
 
 # QUESTIONS FOR CLARIFICATION
-1. What is the product, idea, or message you intend to sell?
-2. Who is your target audience?
-3. Identify at least five potential pain points for your audience.
-4. Brainstorm five story ideas that could resonate with your audience.
-5. Consider five options for an exclusive bonus gift to offer.
-6. Explore potential storylines that align with your message and the audience's needs.
-
-# EXPECTED OUTPUT FORMAT
-- Your speech should be a persuasive and engaging narrative with clear sections: Introduction, Engagement, Logical Arguments, and Closing.
-- The speech should not exceed 1500 words.
-- Ensure that the storytelling elements are vivid and emotionally resonant.
-- Use rhetorical questions strategically to engage the audience.
-- The logical arguments should be well-structured and support your main idea.
-- Conclude with a powerful call to action and mention the exclusive gift.
-
-Use this comprehensive prompt to create a captivating and persuasive speech that will leave a lasting impact on your audience.
+1 What's your product or idea?
+2 Define your target audience.
+3 Identify five audience pain points.
+4 Brainstorm five story ideas.
+5 Suggest five bonus gift options.
+6 Explore storylines aligning with your message.
+7 Anything else?
