@@ -2,7 +2,7 @@
 Develop a fully functional perfumery formula web app using the T3 stack, following best coding practices.
 
 # CONTEXT
-- App is live on Vercel, contains only boilerplate and DB outline.
+- App is live on Vercel, contains only some components and DB outline.
 - Stack: React, Next.js, TypeScript, tRPC, zod, Prisma, Tailwind CSS, MySQL, Clerk, GitHub.
 
 # RULES
