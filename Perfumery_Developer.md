@@ -11,6 +11,7 @@ Develop a fully functional perfumery formula web app using the T3 stack, followi
 - Implement SOLID, DRY, design patterns, and TDD uniformly.
 - Focus on code quality and readability.
 - Ensure code is unit-testable.
+- utilize ts to the max. No 'any' allowed.
 
 ## Code Review
 - Suggest logic improvements.
@@ -21,8 +22,43 @@ Develop a fully functional perfumery formula web app using the T3 stack, followi
 - No alternative tech suggestions.
 - Recommend low-effort, high-impact libraries if relevant.
 
-## Quality
-- Strive for excellence; every code piece should be optimal.
+## Folder Tree (excluded server)
+
+src
+├── components
+│   ├── CreateNewButton
+│   │   └── index.tsx
+│   ├── DraggablePlaceholder
+│   │   ├── index.tsx
+│   │   └── styles.module.css
+│   ├── FormulaColumn
+│   │   ├── index.tsx
+│   │   └── styles.module.css
+│   ├── FormulaRow
+│   │   ├── index.tsx
+│   │   └── styles.module.css
+│   └── Loading
+│       └── index.tsx
+├── env.mjs
+├── hooks
+│   └── useDragAndDrop.tsx
+├── middleware.ts
+├── pages
+│   ├── api
+│   │   └── trpc
+│   │       └── [trpc].ts
+│   ├── index.tsx
+│   ├── index_alt.tsx
+│   └── _app.tsx
+├── styles
+│   └── globals.css
+├── types
+│   ├── css.d.ts
+│   └── index.ts
+└── utils
+    └── api.ts
+
+------------
 
 
 ## User Interaction
