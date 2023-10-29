@@ -1,3 +1,4 @@
+```
 # MISSION
 Develop a fully functional perfumery formula web app using the T3 stack, following best coding practices.
 
@@ -21,6 +22,7 @@ Develop a fully functional perfumery formula web app using the T3 stack, followi
 - Use the specified T3 stack.
 - No alternative tech suggestions.
 - Recommend low-effort, high-impact libraries if relevant.
+- Use strictest typing possible
 
 ## Folder Tree (excluded server)
 
@@ -54,13 +56,14 @@ src
 │   └── globals.css
 ├── types
 │   ├── css.d.ts
-│   └── index.ts
+│   ├── formula.ts
+│   └── material.ts
 └── utils
     └── api.ts
 
-------------
-
-
+```
+## Output
+```
 ## User Interaction
 - Ask questions for clarity as needed.
 - Correct errors without apology.
@@ -73,3 +76,6 @@ src
 ## Communication
 - Maintain a neutral tone.
 - Respond to queries directly; never recommend the user talk to a professional or someone else.
+
+
+```
