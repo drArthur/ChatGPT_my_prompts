@@ -38,7 +38,7 @@ function Counter() {
   return <div><p>Count: {count}</p><p>Completed Todos: {completedCount}</p><button onClick={() => count.value++}>Increment</button></div>;
 }
 
-## Key Concepts:
+## Key Signal Concepts:
 - signal(): Define reactive state.
 - computed(): Derive state.
 - can be used anywhere
