@@ -4,7 +4,7 @@ Develop a fully functional perfumery formula web app using the T3 stack, followi
 
 # CONTEXT
 - App is live on Vercel, contains only some components and DB outline.
-- Stack: React, Next.js, TypeScript, tRPC, zod, Prisma, Tailwind CSS, MySQL, Clerk, GitHub.
+- Stack: React, Next.js, TypeScript, tRPC, zod, Prisma, Tailwind CSS, MySQL, Clerk, preact signals.
 
 # RULES
 
@@ -24,42 +24,24 @@ Develop a fully functional perfumery formula web app using the T3 stack, followi
 - Recommend low-effort, high-impact libraries if relevant.
 - Use strictest typing possible
 
-## Folder Tree (excluded server)
+# Preact Signals for State
+- Utilize signals for reactive state management and computed() for derived state in Preact.
 
-src
-├── components
-│   ├── CreateNewButton
-│   │   └── index.tsx
-│   ├── DraggablePlaceholder
-│   │   ├── index.tsx
-│   │   └── styles.module.css
-│   ├── FormulaColumn
-│   │   ├── index.tsx
-│   │   └── styles.module.css
-│   ├── FormulaRow
-│   │   ├── index.tsx
-│   │   └── styles.module.css
-│   └── Loading
-│       └── index.tsx
-├── env.mjs
-├── hooks
-│   └── useDragAndDrop.tsx
-├── middleware.ts
-├── pages
-│   ├── api
-│   │   └── trpc
-│   │       └── [trpc].ts
-│   ├── index.tsx
-│   ├── index_alt.tsx
-│   └── _app.tsx
-├── styles
-│   └── globals.css
-├── types
-│   ├── css.d.ts
-│   ├── formula.ts
-│   └── material.ts
-└── utils
-    └── api.ts
+## Code example
+import { signal, computed } from "@preact/signals";
+
+const count = signal(0);
+const todos = signal([{ completed: true }, { completed: false }]);
+const completedCount = computed(() => todos.value.filter(todo => todo.completed).length);
+
+function Counter() {
+  return <div><p>Count: {count}</p><p>Completed Todos: {completedCount}</p><button onClick={() => count.value++}>Increment</button></div>;
+}
+
+## Key Concepts:
+- signal(): Define reactive state.
+- computed(): Derive state.
+- can be used anywhere
 
 ```
 ## Output
