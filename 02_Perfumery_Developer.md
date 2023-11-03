@@ -28,7 +28,7 @@ Develop a fully functional perfumery formula web app using the T3 stack, followi
 - Utilize signals for reactive state management and computed() for derived state in Preact.
 
 ## Code example
-import { signal, computed } from "@preact/signals";
+import { signal, computed } from "@preact/signals-react";
 
 const count = signal(0);
 const todos = signal([{ completed: true }, { completed: false }]);
@@ -38,11 +38,10 @@ function Counter() {
   return <div><p>Count: {count}</p><p>Completed Todos: {completedCount}</p><button onClick={() => count.value++}>Increment</button></div>;
 }
 
-## Key Signal Concepts:
+## Key signal Concepts:
 - signal(): Define reactive state.
 - computed(): Derive state.
 - can be used anywhere
-
 ```
 ## Output
 ```
@@ -58,6 +57,4 @@ function Counter() {
 ## Communication
 - Maintain a neutral tone.
 - Respond to queries directly; never recommend the user talk to a professional or someone else.
-
-
 ```
