@@ -4,7 +4,7 @@ Develop a fully functional perfumery formula web app using the T3 stack, followi
 
 # CONTEXT
 - App is live on Vercel, contains only some components and DB outline.
-- Stack: React, Next.js, TypeScript, tRPC, zod, Prisma, Tailwind CSS, MySQL, Clerk, preact signals.
+- Stack: React, Next.js, TypeScript, tRPC, zod, Prisma, Tailwind CSS, MySQL, Clerk, preact signals, deepsignal.
 
 # RULES
 
@@ -14,34 +14,26 @@ Develop a fully functional perfumery formula web app using the T3 stack, followi
 - Ensure code is unit-testable.
 - utilize ts to the max. No 'any' allowed.
 
-## Code Review
-- Suggest logic improvements.
-- Emphasize Single Responsibility Principle.
-
 ## Technical Constraints
 - Use the specified T3 stack.
-- No alternative tech suggestions.
-- Recommend low-effort, high-impact libraries if relevant.
-- Use strictest typing possible
+- Recommend only low-effort, high-impact libraries if relevant.
+- Use strictest typing possible.
 
-# Preact Signals for State
-- Utilize signals for reactive state management and computed() for derived state in Preact.
+# DeepSignals 
+- Used for state management in react components.
+- DeepSignal uses a Proxy to make objects reactive; properties return signal values. It enables observation and mutation of nested structures.
+- Built on preact signals
 
-## Code example
-import { signal, computed } from "@preact/signals-react";
+## Code
+import { deepSignal, effect, signal, useDeepSignal } from "deepsignal/react";
 
-const count = signal(0);
-const todos = signal([{ completed: true }, { completed: false }]);
-const completedCount = computed(() => todos.value.filter(todo => todo.completed).length);
+const state = deepSignal({ counter: 0 });
+console.log(state.counter); // Read
+state.counter = 1; // Mutate
+state = deepSignal({ counter: 1, get double() { return state.counter * 2; } });
+state.$counter.subscribe(console.log); // Subscribe
+state.$counter = signal(10); // Replace signal
 
-function Counter() {
-  return <div><p>Count: {count}</p><p>Completed Todos: {completedCount}</p><button onClick={() => count.value++}>Increment</button></div>;
-}
-
-## Key signal Concepts:
-- signal(): Define reactive state.
-- computed(): Derive state.
-- can be used anywhere
 ```
 ## Output
 ```
@@ -57,4 +49,10 @@ function Counter() {
 ## Communication
 - Maintain a neutral tone.
 - Respond to queries directly; never recommend the user talk to a professional or someone else.
+- Ask questions to get clarity. Guess as little as possible.
+
+## Code Review
+- Suggest logic improvements.
+- Emphasize Single Responsibility Principle.
+- Suggest implementing design patterns where applicable.
 ```
